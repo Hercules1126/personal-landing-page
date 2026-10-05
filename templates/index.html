@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal landing page for Shaddi — Technical Process Specialist, IT Service Desk professional, and AI/content engineering learner.">
+    <title>Shaddi | Personal Landing Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="nav">
+        <div class="container nav-inner">
+            <a class="brand" href="#top">Shaddi</a>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">What I Do</a>
+                <a href="#contact">Connect</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top">
+        <section class="hero container">
+            <div class="hero-copy">
+                <p class="eyebrow">TECHNICAL PROCESS SPECIALIST • TIER 3</p>
+                <h1>Building skills at the intersection of <span>IT, AI & content.</span></h1>
+                <p class="lead">
+                    I’m currently a Technical Process Specialist — Tier 3, with a background in IT Service Desk.
+                    I’m learning and practicing AI vibe coding and content engineering while building projects that turn ideas into useful digital experiences.
+                </p>
+                <div class="actions">
+                    <a class="button primary" href="#about">About Me</a>
+                    <a class="button secondary" href="#contact">Let's Connect</a>
+                </div>
+            </div>
+
+            <div class="hero-photo-wrap">
+                <div class="glow"></div>
+                <img
+    class="hero-photo"
+    src="/static/images/test.jpg"
+    alt="Shaddi's profile photo"
+>
+                <div class="photo-placeholder" aria-label="Profile photo placeholder">YOUR PHOTO</div>
+            </div>
+        </section>
+
+        <section class="section container" id="about">
+            <div class="section-heading">
+                <p class="eyebrow">ABOUT</p>
+                <h2>From IT support to building.</h2>
+            </div>
+            <div class="about-grid">
+                <div class="card">
+                    <h3>My background</h3>
+                    <p>
+                        My experience started in IT Service Desk work, developing a strong foundation in troubleshooting,
+                        problem solving, communication, and technical support. Today, I work as a Tier 3 Technical Process Specialist.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>What I’m learning</h3>
+                    <p>
+                        I’m actively learning and practicing AI-assisted “vibe coding,” Python, web development, and content engineering.
+                        This page is one of the projects I’m using to learn by actually building.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>What I’m building toward</h3>
+                    <p>
+                        I want to combine technical experience, AI tools, coding, and content into practical projects that are useful,
+                        creative, and increasingly polished.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="skills">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">WHAT I DO</p>
+                    <h2>Current skill direction</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill"><span>01</span><strong>IT Service Desk</strong><small>Technical support & troubleshooting</small></div>
+                    <div class="skill"><span>02</span><strong>Process Operations</strong><small>Tier 3 technical process work</small></div>
+                    <div class="skill"><span>03</span><strong>Python</strong><small>Learning through practical projects</small></div>
+                    <div class="skill"><span>04</span><strong>AI Vibe Coding</strong><small>AI-assisted development workflows</small></div>
+                    <div class="skill"><span>05</span><strong>Content Engineering</strong><small>Creating useful digital content</small></div>
+                    <div class="skill"><span>06</span><strong>Continuous Learning</strong><small>Build → test → improve</small></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container" id="gallery">
+            <div class="section-heading">
+                <p class="eyebrow">PERSONAL</p>
+                <h2>A few moments.</h2>
+            </div>
+            <div class="gallery">
+                <img src="{{ url_for('static', filename='images/photo-1.jpg') }}" alt="Personal photo 1">
+                <img src="{{ url_for('static', filename='images/photo-2.jpg') }}" alt="Personal photo 2">
+                <img src="{{ url_for('static', filename='images/photo-3.jpg') }}" alt="Personal photo 3">
+                
+            </div>
+            <p class="note">Replace these three files with your own photos: <code>photo-1.jpg</code>, <code>photo-2.jpg</code>, and <code>photo-3.jpg</code>.</p>
+        </section>
+
+        <section class="section contact" id="contact">
+            <div class="container contact-box">
+                <div>
+                    <p class="eyebrow">CONNECT</p>
+                    <h2>Let’s build something useful.</h2>
+                    <p>Replace the links below with your real LinkedIn, GitHub, email, or other public profiles.</p>
+                </div>
+                <div class="links">
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+                    <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a>
+                    <a href="mailto:you@example.com">Email ↗</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-inner">
+            <span>© 2026 Shaddi</span>
+            <span>Built with Python + Flask</span>
+        </div>
+    </footer>
+</body>
+</html>
